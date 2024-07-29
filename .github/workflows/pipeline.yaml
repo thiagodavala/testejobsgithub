@@ -1,0 +1,19 @@
+name: Teste Jobs in Gihub Actions
+
+on:
+  push:
+    branches:
+      - master
+    
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Create file
+      run: |
+        echo 'Olá mundo!' > teste.txt
+
+    - name: Show file
+      run: |
+        cat teste.txt
