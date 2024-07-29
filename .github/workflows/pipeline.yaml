@@ -3,7 +3,7 @@ name: Teste Jobs in Gihub Actions
 on:
   push:
     branches:
-      - master
+      - main
     
 jobs:
   build:
